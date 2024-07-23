@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Board</title>
+  </head>
+  <body>
+    <h1>後端style圖文留言板</h1>
+    <form id="message-form">
+      <label for="message">留言:</label>
+      <input
+        type="text"
+        id="message"
+        name="message"
+        required
+        style="margin: 10px"
+      />
+      <br />
+      <label for="photo">圖片:</label>
+      <input
+        type="file"
+        id="photo"
+        name="photo"
+        accept="image/*"
+        required
+        style="margin: 10px"
+      />
+      <br />
+      <button type="submit style="margin: 10px"">提交</button>
+      <hr />
+    </form>
+    <div id="messages"></div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
